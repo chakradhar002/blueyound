@@ -1,0 +1,19 @@
+<html>
+
+<script>
+    // Generate Function generates three  
+// different numbers in three calls 
+function* fun() { 
+    yield 10; 
+    yield 20; 
+    yield 30; 
+} 
+
+let getdummy = fun(); /* call the function*/
+console.log(getdummy.next().value);
+console.log(getdummy.next().value);
+console.log(getdummy.next().value);
+console.log(getdummy.next().value);
+    
+</script>
+</html>
