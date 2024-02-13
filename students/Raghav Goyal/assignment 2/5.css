@@ -1,0 +1,22 @@
+body{
+    margin:0;
+
+
+}
+
+nav{
+    overflow:hidden;
+    background-color: azure;
+
+}
+
+nav a{
+    float:left;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 10px;
+    margin-right: 10px;
+
+}

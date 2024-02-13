@@ -1,0 +1,39 @@
+<!--Write a JavaScript function to get the values of First and Last names of the following form.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="fname"> first name</label>
+<input type="text" name="fname" id="fname">
+
+<label for="lname"> lastn name</label>
+<input type="text" name="lname" id="lname">
+<button onclick="retrive()">Retrive</button>
+<p id="R"></p>
+<p id="L"></p>
+
+<script>
+
+function retrive()
+{
+    var first=document.getElementById("fname").value;
+    var second=document.getElementById("lname").value;
+
+    document.getElementById("R").innerHTML=first;
+    document.getElementById("L").innerHTML=second;
+
+}
+
+</script>
+
+</body>
+</html>
+
+
+    

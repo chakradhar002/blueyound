@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    display: flex;
+    min-height: fit-content;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+}
+.page
+{
+   align-items: center; 
+   background-color: beige;
+   padding:20px 20px;
+   display: flex;
+}
+.left
+{
+    flex:1;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.right
+{
+    flex:1;
+    padding:70px 20px;
+    overflow: hidden;
+}
+
+img
+{
+    width: 300px;px;
+    height: 200px;
+    object-fit: cover;
+    align-items:end;
+}
+.btn
+{
+    color: darkred;
+    text-align: center;
+}
+.butn
+{
+    align-items: center;
+    text-align: center;
+}
