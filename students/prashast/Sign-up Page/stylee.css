@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.a {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+.b {
+    color: #333;
+}
+
+.c {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.c:hover {
+    text-decoration: underline;
+}
+
+.f {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.f label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.f input,
+.f select,
+.f textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.f input[type="checkbox"] {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.f input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.f input[type="submit"]:hover {
+    background-color: #0056b3;
+}

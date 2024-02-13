@@ -1,0 +1,60 @@
+<html>
+    <title>Assignment 2</title>
+    <style>
+        .formfields{width: 80%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;}
+        .emp {
+            display: flex;
+        }
+        #city{
+            display: flex;
+        }
+        .signinbtn{background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;}
+    </style>
+    <body>
+        <form class="formfields" style="border: 5px solid rgb(226, 223, 223);">
+            <div class="emp">
+                <div id="emailfield">
+                    <label for="email" style="width: 20%;">Email:</label>
+                    <input type="text" class="formfields" id="email" name="email" placeholder="Email">
+                </div>
+                <div id="passfield">
+                    <label for="password" style="width: 20%;">Password:</label>
+                    <input type="password" class="formfields" id="password" name="password" placeholder="Password">
+                </div>
+            </div>
+            <div id="add1field">
+                <label for="add1" style="width: 20%;">Address:</label><br>
+                <input type="text" class="formfields" id="add1" name="add1" placeholder="124 Main street">
+            </div>
+            <div id="add2field">
+                <label for="add2" style="width: 20%;">Address2:</label><br>
+                <input type="text" class="formfields" id="add2" name="add2" placeholder="Household, landmark">
+            </div>
+            <div id="city">
+                <div id="cityfield">
+                    <label for="cityinput" style="width: 20%;">City:</label><br>
+                    <input type="password" class="formfields" id="cityinput" name="cityinput">
+                </div>
+                <div id="statefield">
+                    <label for="state">State:</label>
+                    <select id="state">
+                        <option value="">Choose....</option>
+                        <option value="AP">AP</option>
+                        <option value="MP">MP</option>
+                        <option value="UP">UP</option>
+                        
+                    </select>
+                </div>
+                <div id="pincodefield">
+                    <label for="pin" style="width: 20%;">Pincode:</label>
+                    <input type="text" class="formfields" id="pin" name="pin" placeholder="">
+                </div>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="terms">Check me out</label>
+            </div>
+            <button class="signinbtn">Sign in</button>
+        </div>
+    </body>
+</html>

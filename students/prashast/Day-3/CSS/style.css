@@ -1,0 +1,17 @@
+.a{
+    padding: 20px;
+    border: 2px solid black;
+    border-top-left-radius: 2em;
+    background-color: #dddddd ;
+}
+.b{
+    font-size: 30px;
+    text-shadow: 4px 4px 2px blue ;
+}
+.c{
+    font: optional;
+    font-size: 30px;
+    border: 15px solid transparent;
+    padding: 20px;
+    border-image: url("./tree-736885_640.jpg") 30% round ;
+}

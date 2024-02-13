@@ -1,0 +1,17 @@
+.a{
+    color: blue;
+    background-color: beige;
+    padding: 20px 40px 60px 80px;
+    border: 30px solid black;
+    margin: 40px 100px 50px 300px;
+    text-align: center;
+}
+.b{
+    color: blue;
+    background-color: beige;
+}
+.c{
+    color: blue;
+    background-color: beige;
+}
+

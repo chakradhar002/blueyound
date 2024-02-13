@@ -1,0 +1,28 @@
+<!-- Write a JavaScript function to get the values of First and Last names of the following form. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="form" onsubmit="submitForm(event)">
+        <label for="firstName">FIRST NAME:</label>
+        <input type="text" id="firstName"></br>
+        <label for="lastName">LAST NAME:</label>
+        <input type="text" id="lastName"></br>
+        <input type="submit">
+    </form>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            var firstNameValue = document.getElementById('firstName').value;
+            var lastNameValue = document.getElementById('lastName').value;
+            console.log("First Name: " + firstNameValue);
+            console.log("Last Name: " + lastNameValue);
+        }
+    </script>
+</body>
+</html>

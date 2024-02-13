@@ -1,0 +1,30 @@
+
+    /* background-color: bisque;
+    color: black;
+    margin-left: 500px;
+    margin-top: 250px; */
+
+.a{
+    opacity: 80%;
+    margin-left: 500px;
+    margin-top: 250px; 
+    /* width: 300px; */
+    background-color:green;
+
+}
+.b{
+    font-size: 70px;
+}
+.c{
+    font-size: 30px;
+}
+*{
+    /* background-image: url("./back-ground.jpg"); */
+    background-color: rgb(247, 241, 241);
+}
+.f{
+    width: 350px;
+}
+
+
+

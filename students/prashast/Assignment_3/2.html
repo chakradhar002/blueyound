@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Specify a default font */
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        img.header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            margin: 0;
+        }
+
+        .content1 {
+            width: 60%;
+            margin-top: 20px; /* Adjust margin-top */
+            padding: 40px;
+            display: inline-block;
+            vertical-align: top; /* Align to the top */
+        }
+
+        .first-container {
+            margin: 20px;
+        }
+
+        .first-container h3 {
+            margin-bottom: 10px;
+        }
+
+        .first-container p {
+            margin-bottom: 20px;
+        }
+
+        .first-container img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        button {
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: white;
+            color: red;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .recent-posts {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top; /* Align to the top */
+        }
+
+        .recent-posts h2 {
+            margin-top: 100px; /* Remove top margin */
+        }
+
+        .recent-posts article {
+            margin-bottom: 20px;
+        }
+
+        .recent-posts img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .recent-posts p {
+            margin-top: 5px; /* Add top margin */
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="header-image" src="./images/kitchen.jpg" alt="">
+        <h1>BLOG</h1>
+    </div>
+    <div class="content1">
+        <article class="first-container">
+            <h3>How much would you pay for a quality burger</h3>
+            <p>12.05.2017</p>
+            <img src="./images/burger.jpg" alt="">
+            <p>It was a little strange to get the new summer-themed Chick-fil-A Smokehouse BBQ Bacon Sandwich on the day of
+                an unseasonable May snowstorm in Salt Lake City but fortunately, deliciousness knows no reason. From top to 
+                bottom, the sandwich consists of a Hawaiian bun, honey smokehouse BBQ sauce, bacon with a brown sugar pepper
+                blend, Colby-Jack cheese, grilled chicken, lettuce, and bun </p>
+            <button>Read more</button>
+        </article>
+        <article class="first-container">
+            <h3>How to cook the perfect steak</h3>
+            <p>12.05.2017</p>
+            <img src="./images/steak.jpg" alt="">
+            <p>It was a little strange to get the new summer-themed Chick-fil-A Smokehouse BBQ Bacon Sandwich on the day of
+                an unseasonable May snowstorm in Salt Lake City but fortunately, deliciousness knows no reason. From top to 
+                bottom, the sandwich consists of a Hawaiian bun, honey smokehouse BBQ sauce, bacon with a brown sugar pepper
+                blend, Colby-Jack cheese, grilled chicken, lettuce, and bun </p>
+            <button>Read more</button>
+        </article>
+    </div>
+    <div class="recent-posts">
+        <div>
+            <h2>Recent posts</h2>
+            <article>
+                <img src="./images/burger1.jpg" alt="">
+                <p>HOW MUCH WOULD YOU PAY FOR A QUALITY BURGER</p>
+            </article>
+            <article>
+                <img src="./images/steak1.jpg" alt="">
+                <p>HOW TO COOK THE PERFECT STEAK</p>
+            </article>
+            <article>
+                <img src="./images/grilled_cheese.jpg" alt="">
+                <p>A GRILLED CHEESE CAN BE TRULY LUXURIOUS</p>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.a{
+    padding: 50px;
+    border: 10px solid black;
+    background-color: antiquewhite;
+    width: 50%;
+}
+
+.bb{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

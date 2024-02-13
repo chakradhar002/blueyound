@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('./images/wood.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div_clas {
+            
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center vertically */
+            justify-content: space-between; /* Space between items (image and text) */
+        }
+
+        .img_1 {
+            width: 125px;
+            height: 125px;
+        }
+        nav{
+            display: block;
+            
+            float: left;
+        }
+        ul{
+            margin: 0px;
+            padding: 7px;
+            height: 20px;
+            line-height: 20px;
+        }
+        li{
+            font-family: 'Lato', sans-serif;
+            display: inline-block;
+        }
+        a{
+            color: #333;
+            padding:5px 7px 10px 7px ;
+            font-size:1em ;
+            font-weight: bold;
+            text-decoration: none;
+
+
+        }
+        article:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        a:hover{
+            color: #ffffff;;
+        }
+        .img_2{
+            width: 150px;
+            height: 150px;
+        }
+        .p_1{
+            border-bottom: 1px solid  rgb(238, 238, 240);
+            padding-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-left: 20%;
+    margin-right: 20%;">
+        <div style=" background-color:rgb(194, 192, 196);" class="div_clas">
+            <img class ="img_1" src="./images/tea_bag.jpg" alt="">
+            <strong><p style="font-size: 50px;text-align: right; margin: 0;">Yoko's Kitchen</p></strong>
+        </div>
+        <div class ="div_clas" style="border: rgb(96, 13, 13) 2px solid;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 0;
+                background-color:rgb(194, 192, 196);
+                display: flex; /* Use flexbox */
+                align-items: center; /* Center vertically */
+                justify-content: space-between; /* Space between items (image and text) */
+        ">
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li> <a  href="#">classes</a></li>
+                    <li><a  href="#">catering</a></li>
+                    <li> <a  href="#">about</a></li>
+                    <li> <a  href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="div_clas" style=" padding-top: 10px;padding-bottom:10px;margin: 0;">
+            <div style="width: 70%;border-right:2px rgb(227, 222, 232) solid ;">
+                <article>
+               
+                    <img style="padding: 10px;float: left ;" class="img_2" src="./images/bok-chai.jpg" alt="">
+                    <h2 style="display: inline-block; margin: 5px;padding: 0;color: rgb(99, 99, 100);">Japanese Vegetarian</h2>
+                    <h3  style="display: inline-block;margin: 5px;padding: 0;color: rgb(195, 141, 71);">Five course in London</h3>
+                    <p>A five week introduction to traditional
+                         Japanese vegetarian meals, teaching you a 
+                        selection of rice and noodle dishes</p>
+                </article>
+                <article>
+                   
+                    <img style="padding: 10px;float: left ;" class="img_2" src="./images/bok-chai.jpg" alt="">
+                    <h2 style="display: inline-block; margin: 5px;padding: 0;color: rgb(99, 99, 100);">Japanese Vegetarian</h2>
+                    <h3  style="display: inline-block;margin: 5px;padding: 0;color: rgb(195, 141, 71);">Five course in London</h3>
+                    <p>A five week introduction to traditional
+                         Japanese vegetarian meals, teaching you a 
+                        selection of rice and noodle dishes</p>
+                </article>
+            </div>
+            <div style="width: 27%;color: rgb(177, 90, 108); margin: 0px;text-align: left;">
+                <h1 style="display: inline-block;  ; ">Popular Recipes</h1>
+                <p  class="p_1">Yakitori(grilled chicken)</p>
+                <p  class="p_1" >Tsukune(minced chicken patties)</p>
+                <p  class="p_1">Okonomiyaki(savory pancakes)</p>
+                <p  class="p_1">Mizutaki(chicken stew)</p>
+                <p  class="p_1" >Sushi</p>
+                <p class="p_1">Tempura</p>
+            </div>
+        </div>
+       
+        <!-- <div class="div_clas" style="width: 60%;display: inline-block;">
+           
+        </div> -->
+        
+    </div>
+    <footer style="text-align: center; background-color:rgb(194, 192, 196); color:white ; width: 100%;border: 2px black solid;">
+        ©2017 Yoko's Kitchen
+    </footer>
+     c=
+</body>
+</html>
