@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table1" border="1">
+        <tr>
+            <td>First-Name</td>
+            <td>Surname</td>
+        </tr>
+
+        <tr>
+            <td>Anil</td>
+            <td>kapoor</td>
+        </tr>
+
+        <tr>
+            <td>Selmon</td>
+            <td>Bhai</td>
+        </tr>
+
+    </table>
+
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            let x = document.getElementById("table1");
+            let fname = "ameer";
+            let sname = "khan";
+            x.rows[1].cells[0].innerHTML = fname;
+            x.rows[1].cells[1].innerHTML = sname;
+        }
+    </script>
+</body>
+</html>

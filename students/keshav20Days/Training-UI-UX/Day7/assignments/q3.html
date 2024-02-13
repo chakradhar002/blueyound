@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Table</title>
+</head>
+<body>
+
+<table id="myTable" border="1">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td>Row 2, Cell 2</td>
+  </tr>
+</table>
+
+<button onclick="addTableRow()">Add Row</button>
+
+<script>
+function addTableRow() {
+
+  var table = document.getElementById("myTable");
+
+
+  var newRow = table.insertRow(-1);
+
+  // Insert cells into the new row
+  var cell1 = newRow.insertCell(0);
+  var cell2 = newRow.insertCell(1);
+
+  // Set the content of the cells (you can customize this)
+  cell1.innerHTML = "New Row, Cell 1";
+  cell2.innerHTML = "New Row, Cell 2";
+}
+</script>
+
+</body>
+</html>

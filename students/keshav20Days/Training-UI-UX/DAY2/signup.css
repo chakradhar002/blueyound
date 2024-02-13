@@ -1,0 +1,50 @@
+html {
+    background-color: greenyellow;
+    color : black;
+}
+input {
+    display: block;
+    color: transparent;
+    margin-left : 25%;
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+}
+
+#check-box {
+    width: auto;
+}
+
+.div-ele {
+    margin-top : 40px;
+    margin-left: 25%;
+    padding : 20px;
+    text-align: center;
+    border: 1px solid black;
+    width: 600px;
+    /* height: 400px; */
+    background-color: aliceblue;
+}
+
+#pull-down-menu{
+    margin-top: 3px;
+    /* padding: 5px; */
+
+}
+
+button {
+    color: black;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+h1 {
+    margin-left: 42%;
+    margin-top: 10%;
+}
+
+.form-items {
+    display: flex;
+}

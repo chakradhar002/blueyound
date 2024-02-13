@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin : 0;
+            padding: 0;;
+            background-color: #24252A;
+        }
+
+        li,button,a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: azure;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+
+        img {
+            margin-right: auto;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav-links li a:hover{
+            color: aqua;
+        }
+
+        button {
+            margin-left: 20px;
+            background-color: aqua;
+            color: black;
+            padding: 9px 25px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cat.jpg" alt="">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="">Services</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+        </nav>
+        <button class="cta">Contact</button>
+    </header>
+</body>
+</html>
