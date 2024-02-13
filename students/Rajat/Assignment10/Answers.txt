@@ -1,0 +1,3 @@
+1)SELECT (location_id, street_address, city, state_province, country_name) from locations lo inner join countries co on lo.country_id=co.country_id;
+2)SELECT emp.FIRST_NAME, emp.LAST_NAME, dept.DEPARTMENT_ID, dept.DEPARTMENT_NAME from employees emp inner join departments dept on emp.DEPARTMENT_ID=dept.DEPARTMENT_ID;
+4)SELECT emp.EMPLOYEE_ID, emp.LAST_NAME as Employee, man.MANAGER_ID, man.FIRST_NAME as manager from employees emp inner join employees man on emp.MANAGER_ID=man.EMPLOYEE_ID;

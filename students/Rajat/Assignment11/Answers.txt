@@ -1,0 +1,5 @@
+Answer : 
+1) SELECT emp.EMPLOYEE_ID, emp.LAST_NAME as Employee,man.EMPLOYEE_ID, man.LAST_NAME as Manager from employees emp inner join employees man on emp.MANAGER_ID = man.EMPLOYEE_ID
+
+
+2) SELECT emp.EMPLOYEE_ID, CONCAT(emp.FIRST_NAME,emp.LAST_NAME) as Employee, man.EMPLOYEE_ID, CONCAT(man.FIRST_NAME,man.LAST_NAME) as HireEmployee from employees emp cross join employees man on emp.HIRE_DATE < man.HIRE_DATE

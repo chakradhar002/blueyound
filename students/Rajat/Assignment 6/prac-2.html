@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<h2>My First JavaScript</h2>
+<!-- 
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button> -->
+
+<!-- <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">heyyy</button> -->
+
+<p id="demo"></p>
+<script>
+    function checkStringPalindrome(str)
+    {
+        let l=str.length;
+        for(let i=0;i<l/2;i++)
+        {
+            if(str[i]!=str[l-1-i])
+            return false;
+        }
+
+        return true;
+    }
+
+    let str=prompt("Enter a String");
+
+    let val=checkStringPalindrome(str);
+    console.log(val);
+    document.getElementById('demo').innerHTML = val;
+</script>
+</body>
+</html>

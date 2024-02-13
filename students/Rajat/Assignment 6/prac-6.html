@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<p id="demo"></p>
+<script>
+    let Longest= (str) => {
+        
+        let arr1=str.split(' ');
+        let lon_len=0;
+        let lon_word="";
+        for(let x=0;x<arr1.length;x++)
+        {
+            // arr2.push(arr1[x].charAt(0).toUpperCase()+arr1[x].slice(1));
+            let str2=arr1[x];
+            let word_len=str2.length;
+
+            if(word_len>lon_len)
+            {
+                lon_len=word_len;
+                lon_word=str2;
+            }
+        }
+
+        return lon_word;
+    }
+
+    let str=prompt("Enter a String");
+
+    let rt=Longest(str);    
+    document.getElementById('demo').innerHTML = rt;
+</script>
+</body>
+</html>

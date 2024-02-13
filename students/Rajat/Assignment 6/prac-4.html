@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<p id="demo"></p>
+<script>
+    let sortedString= (str) => {
+        return str.split("")
+               .sort()
+               .join("");
+
+    }
+
+    let str=prompt("Enter a String");
+
+    let rt=sortedString(str);    
+    document.getElementById('demo').innerHTML = rt;
+</script>
+</body>
+</html>
