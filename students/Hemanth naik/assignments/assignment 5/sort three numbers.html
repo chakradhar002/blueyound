@@ -1,0 +1,53 @@
+<!-- Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the results.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<label for="numbers"> numbers:</label>
+<input type="text" id="input">
+<br>
+
+
+<button onclick="sort()">Submit</button>
+<p id="result"></p>
+
+<script>
+     
+    function sort()
+     
+    {
+        let text=document.getElementById("input").value;
+     let Arr = text.split(",").map(function(num)
+     {
+        return parseInt(num.trim());
+     });
+                  
+     let res=[];
+     for(let i=0;i<Arr.length-1;i++)
+     {
+        for(let j=i+1;j<Arr.length;j++)
+        {
+            if(Arr[i]>Arr[j])
+            {
+               let temp=Arr[i];
+               Arr[i]=Arr[j];
+               Arr[j]=temp;
+
+            }
+        }
+     }
+
+            alert("Sorted Numbers: " + Arr);
+
+    }
+
+</script>
+
+</body>
+</html>

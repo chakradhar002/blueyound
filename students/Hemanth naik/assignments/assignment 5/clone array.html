@@ -1,0 +1,35 @@
+<!--Write a JavaScript function to clone an array.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="exampleUsage()">Run Example</button>
+    <p id="result"></p>
+
+    <script>
+
+
+function cloneArray(arr) {
+            // Using the spread syntax to clone the array
+            return [...arr];
+        }
+
+        function exampleUsage(){
+
+            let originalArray = [10,5,8,2,50];
+            let clonedArray = cloneArray(originalArray);
+
+            document.getElementById("result").innerHTML=clonedArray;
+
+            
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    <script>
+
+        let num="";
+
+        for( let i=0;i<10;i++)
+        {
+           if(i===3)
+           {
+            break;
+
+           }
+         num += "the number is " +i + "<br>";
+
+
+        }
+
+        document.getElementById("demo").innerHTML=num;
+    </script>
+</body>
+</html>

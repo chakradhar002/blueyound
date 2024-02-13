@@ -1,0 +1,56 @@
+<!-- Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="inputnumbers"> input Numbers</label>
+    <input type="text" id="input">
+    <button onclick="productsign()"> sign of product</button> 
+    <p id="result"></p>
+
+
+    <script>
+
+        function productsign( )
+        {
+
+            let text=document.getElementById("input").value;
+
+            let numbers= text.split(",").map(function(num)
+            {
+                return parseInt(num.trim());
+            });  
+            var product=1;
+            for(let i=0;i<numbers.length;i++)
+            {
+               product*=numbers[i];
+
+            
+
+            }
+            if(product>0)
+            {
+                alert("The sign is positive")
+
+            }
+            else if(product<0)
+            {
+                alert("The sign is negative")
+            }
+            else{
+                alert("the product is zero")
+            }
+
+            
+            
+        }
+    </script>
+    
+</body>
+</html>

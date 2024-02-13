@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.part1{
+            height:150px;
+            background-image: url(https://studyfinds.org/wp-content/uploads/2020/09/AdobeStock_286178925-scaled.jpeg);
+            
+            filter: brightness(50%); 
+        }*/
+        
+        .part1 {
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .part1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://studyfinds.org/wp-content/uploads/2020/09/AdobeStock_286178925-scaled.jpeg);
+            background-size: cover;
+            filter: brightness(50%); /* Adjust the brightness level */
+            z-index: -1;
+        }
+
+        h1
+        {
+            color: white;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .burger{
+            height:200px;
+            width: 80%;
+            margin:0;
+            padding-left: 10px;
+
+        }
+
+        .btn{
+            text-align: center;
+            
+            background: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: rgb(219, 27, 27); /* Set the desired text color */
+            background-color: rgb(246, 246, 247); /* Set the background color */
+            padding: 10px 20px;
+            border: solid red 1px;
+
+
+        }
+        .btn:hover
+        {
+            color:white;
+            background-color: red;
+        }
+        p{
+            
+            width: 400px;
+        }
+         
+        .second{
+            display: flex;
+            padding:10px;
+            background-image: url(https://th.bing.com/th/id/OIP.xPjdj54j7VOpYgIbI3WJlAAAAA?rs=1&pid=ImgDetMain);
+            background-size: cover;
+        }
+        .part2
+        {
+
+            width: 700px;
+        }
+        
+        .steak{
+            width: 300px;
+            height: 150px;
+
+        }
+        .part3
+        {
+            padding-left: 30px;
+        }
+        .para
+        {
+           width:500px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="part1">
+        <h1>Blog</h1>
+        
+    </div>
+
+    <div  class="second">
+        <div class="part2">
+        
+         
+            <div class="part2.1">
+            <h4>How much do you pay for a quality Burger</h4>
+            
+            <p>19.01.2024</p>
+            <img  class="burger" src="https://th.bing.com/th/id/R.7f8c8f12d14b1dfcafefa4d836f86bcd?rik=Vq03iP5ZHdUwUA&riu=http%3a%2f%2fdano.com.ng%2fwp-content%2fuploads%2f2017%2f11%2fjunks.jpg&ehk=wRUMcr0mtxg8shtu%2f2vzye04y%2baGixdKiYF0FUvaIXI%3d&risl=&pid=ImgRaw&r=0" alt="burger" title="burger" >
+            <p class="para">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin and contains essential nutrients such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth. Different species of animals have different feeding behaviours that satisfy the needs of their metabolisms and have evolved to fill a specific ecological niche within specific geographical contexts.</p>
+             <button class="btn">Read More</button>
+            </div>
+            <br>
+
+            <div class="part2.2">
+            <h4>How to cook perfect steak</h4>
+            
+            <p>19.01.2024</p>
+            <img  class="burger" src="https://th.bing.com/th/id/OIP.x1EfN0ZGyXx2xzxmZ9l3HgHaE8?rs=1&pid=ImgDetMain" alt="steak" title="steak" >
+            <p class="para">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, or fungal origin and contains essential nutrients such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth. Different species of animals have different feeding behaviours that satisfy the needs of their metabolisms and have evolved to fill a specific ecological niche within specific geographical contexts.</p>
+             <button class="btn">Read More</button>
+            </div>
+
+        </div>
+        <div class="part3">
+            <h4>How much do you pay for a quality Burger ?</h4>
+            <br>
+            
+            <img  class="steak" src="https://www.opskrifter.dk/images/recipes/ZzD5mxVWw3HKFO7tvjca5x6nfVsKXzq7Jk5McWtz.jpeg" alt="burger" title="burger" >
+            <p>Come lets have a Delicious Burger.</p>
+            
+            
+            
+            
+            <br>
+
+            
+            <img  class="steak" src="https://www.nutritionadvance.com/wp-content/uploads/2018/11/how-to-cook-steak.jpg" alt="steak" title="steak" >
+            <p>Steak makes your tummy full. YUMMY!. </p>
+             
+
+             <br>
+
+            
+             <img  class="steak" src="https://static01.nyt.com/images/2015/03/18/multimedia/recipe-lab-lamb/recipe-lab-lamb-videoSixteenByNine3000.jpg?year=2015&h=1688&w=3000&sig=0x8fd3a8eba8526fd903358a16d8bb2f9b&tw=1" alt="steak" title="steak" >
+             <p>The best roasted lamb for your eastes feast. </p>
+
+             <br>
+
+             <img  class="steak" src="https://www.hotelphotographers.eu/wp-content/uploads/2015/11/Food-photo-7.jpg" alt="steak" title="steak" >
+             <p>Look how delicious are they looking.  </p>
+              
+            
+
+
+        </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- Write a JavaScript function to add rows to a table.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     
+     #mytable
+     {border: solid black 1px;
+        border-collapse: collapse;
+        
+
+     }
+
+     tr,td{
+        border-collapse: collapse;
+        border: solid black 1px;
+     }
+
+    </style>
+</head>
+<body>
+ <table id="mytable"  >
+
+
+   
+<thead>
+    <tr>
+        <td>COLUMN 1</td>
+    </tr>
+</thead>
+
+<tbody id="table body">
+    <tr>
+        <td> cell 1</td>
+    </tr>
+    <tr>
+        <td> cell 2</td>
+    </tr>
+    <tr>
+        <td> cell 3</td>
+    </tr>
+
+
+
+</tbody>
+
+</table>
+
+<button type="button" onclick="Adding()"> Add row</button>
+
+
+
+<script>
+
+    function Adding()
+    {
+        let body =document.getElementById("table body");
+
+        
+
+        let new_row= body.insertRow(-1);
+
+        let newText = document.createTextNode("New bottom row");
+
+        new_row.appendChild(newText);
+
+        
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the results.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="inputnumbers"> input Numbers</label>
+    <input type="text" id="input">
+    <button onclick="maxof5()"> sign of product</button> 
+    <p id="result"></p>
+
+<script>
+
+function maxof5()
+{
+    let text=document.getElementById("input").value;
+
+let numbers= text.split(",").map(function(num)
+{
+    return parseInt(num.trim());
+});  
+
+let large=numbers[0];
+
+for(let i=0;i<numbers.length;i++)
+{
+    if(large<numbers[i])
+    {
+        large=numbers[i];
+    }
+    
+}
+alert("The largest number is " +large);
+
+}
+
+
+</script>
+
+
+</body>
+</html>

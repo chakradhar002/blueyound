@@ -1,0 +1,53 @@
+<!-- Write a JavaScript program that displays the largest integer among two integers.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="number1" >Number 1: </label>
+    <input  id="num1" type="number">
+   <br>
+  <br>
+  
+    <label for="number2" >Number 2: </label>
+    <input  id="num2" type="number">
+   <br>
+   <br>
+
+
+   <button onclick="findmaximum()" >find maximun</button>
+
+   <p id="maximum"></p>
+
+   <script>
+
+    function findmaximum()
+    {
+
+        let N1 =parseFloat(document.getElementById("num1").value);
+        let N2 =parseFloat(document.getElementById("num2").value);
+
+        if(!isNaN(N1) && !isNaN(N2) )
+        {
+            let maximumnum=Math.max(N1,N2);
+
+            document.getElementById("maximum").innerHTML="the maximum number is "+maximumnum;
+
+        }
+        else
+        {
+            
+
+            document.getElementById("maximum").innerHTML="please enter valid numbers" ;
+
+        }
+
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--Write a JavaScript program to set paragraph background color.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button type="button" onclick="bgcolor()">Change</button>
+
+<p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Nulla, possimus! Placeat repellendus voluptas accusamus
+      numquam ullam aliquam temporibus facere obcaecati!
+    </p>
+    
+    <script>
+
+        function bgcolor()
+        {
+            var P = document.getElementById("para");
+
+            P.style.backgroundColor = "red";
+            P.style.color="white";
+
+        }
+    
+    </script>
+</body>
+</html>
