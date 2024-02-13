@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <table id="table">
+            <tr>
+                <th>Country</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>IND</td>
+                <td>Kar</td>
+            </tr>
+            <tr>
+                <td>IND</td>
+                <td>Tik</td>
+            </tr>
+        </table>
+        <script>
+            // Write a JavaScript function to add rows to a table.
+            // let tabl = document.getElementById("table");
+            // const row = document.createElement("tr");
+            // const col1 = document.createElement("td");
+            // const col1val = document.createTextNode("IND");
+            // col1.appendChild(col1val);
+            // const col2 = document.createElement("td");
+            // const col2val = document.createTextNode("cisco");
+            // col2.appendChild(col2val);
+            // tabl.appendChild(row);
+            let table = document.getElementById("table");
+            let newRow = table.insertRow(-1);
+            let cell = newRow.insertCell(-1);
+            cell.innerHTML = "IND";
+            cell = newRow.insertCell(-1);
+            cell.innerHTML = "cisco";
+            
+        </script>
+    </body>
+</html>

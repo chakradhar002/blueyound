@@ -1,0 +1,21 @@
+<script>
+    /*2. Write a JavaScript function to clone an array.
+Test Data :
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
+[1, 2, 4, 0]
+[1, 2, [4, 0]]*/
+    function array_Clone(a){
+        let x = [];
+        //console.log(typeof(a) + " "+a);
+        for(let i in a){
+            x.push(a[i]);
+        }
+        return x;
+    }
+    console.log(array_Clone([1, 2, 4, 0]));
+    console.log(array_Clone([1, 2, [4, 0]]));
+</script>
+<body>
+
+</body>

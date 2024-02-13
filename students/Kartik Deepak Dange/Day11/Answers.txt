@@ -1,0 +1,7 @@
+Answer : 
+1) select e.EMPLOYEE_ID, e.LAST_NAME as Employee,m.EMPLOYEE_ID, m.LAST_NAME as Manager from employees e inner join employees m on e.MANAGER_ID = m.EMPLOYEE_ID
+
+
+2) select e.EMPLOYEE_ID, concat(e.FIRST_NAME,e.LAST_NAME) as Employee, m.EMPLOYEE_ID, concat(m.FIRST_NAME,m.LAST_NAME) as HireEmployee from employees e cross join employees m on e.HIRE_DATE < m.HIRE_DATE
+
+3) select e.EMPLOYEE_ID, j.JOB_TITLE, GETDATE()-e.HIRE_DATE as NoOfDays from employees e join jobs j on e.JOB_ID=j.JOB_ID and e.DEPARTMENT_ID = 90
