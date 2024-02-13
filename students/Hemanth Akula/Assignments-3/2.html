@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .blog {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog::before {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(bgm.jpg);
+            background-size: cover;
+            filter: brightness(70%);
+            z-index: -1;
+        }
+        h1 {
+            font-size: 50px;
+            padding: 50px 25px;
+            color: white;
+            text-align: center;
+            justify-content: center;
+        }
+        .bgm{
+            background-image: url(bgm.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .second {
+            display: flex;
+            width: 70%;
+            margin: auto;
+        }
+        .sec1{
+            width: 2/3;
+        }
+        .leftside{
+            width: 90%;
+            height: 300px;
+        }
+        .lefttext{
+            width: 90%;
+        }
+        .rightside{
+            width: 300px;
+        }
+        .righttext{
+            text-transform: uppercase;
+        }
+        button{
+            border: 1px solid rgb(196, 98, 73);
+            color: rgb(196, 98, 73);
+            border-radius: 15px;
+            padding: 10px 25px;
+            cursor: pointer;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        button:hover{
+            color: white;
+            background-color: rgb(196, 98, 73);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="blog">
+        <h1>BLOG</h1>
+    </div>
+    <div class="bgm">
+        <div class="second">
+            <div class="sec1">
+                <div>
+                    <h3>How much would you pay for a quality burger</h3>
+                    <p>12.05.2017</p>
+                    <img class="leftside" src="left1.jpg" alt="zoro" title="zoro" />
+                    <p class="lefttext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quasi doloremque provident officia modi velit culpa explicabo libero at veritatis nemo, nostrum asperiores sunt, voluptatibus minus quod tempora ad omnis eveniet accusamus doloribus aperiam minima.</p>
+                    <button>Read More</button>
+                </div>
+                <div>
+                    <h3>How much would you pay for a quality burger</h3>
+                    <p>12.05.2017</p>
+                    <img class="leftside" src="left2.jpg" alt="zoro" title="zoro" />
+                    <p class="lefttext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quasi doloremque provident officia modi velit culpa explicabo libero at veritatis nemo, nostrum asperiores sunt, voluptatibus minus quod tempora ad omnis eveniet accusamus doloribus aperiam minima.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="sec2">
+                <h4>Recent Posts</h4>
+                <div>
+                    <img class="rightside" src="right1.jpg" alt="zoro" title="zoro" />
+                    <p class="righttext">Lorem ipsum dolor sit.</p>
+                </div>
+                <div>
+                    <img class="rightside" src="right2.jpg" alt="zoro" title="zoro" />
+                    <p class="righttext">Lorem ipsum dolor sit.</p>
+                </div>
+                <div>
+                    <img class="rightside" src="right3.jpg" alt="zoro" title="zoro" />
+                    <p class="righttext">Lorem ipsum dolor sit.</p>
+                </div>
+                <div>
+                    <img class="rightside" src="left3.jpg" alt="zoro" title="zoro" />
+                    <p class="righttext">Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

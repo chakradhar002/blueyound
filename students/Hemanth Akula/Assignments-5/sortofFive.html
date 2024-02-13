@@ -1,0 +1,32 @@
+<!-- Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the results -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Enter 5 numbers (comma separated) : </label>
+        <input type="text" id="inp">
+        <button onclick="SortThreeElements()">Submit</button>
+    </div>
+    <script>
+        function SortThreeElements(){
+            let val = document.getElementById("inp").value;
+            let stream = val.split(",").map(function(num){
+                return parseFloat(num.trim());
+            });
+            let res=stream[0];
+            for(let i in stream){
+                if(stream[i] > res){
+                    res = stream[i];
+                }
+            }
+            alert("The maximum of the given three numbers is " + res);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!-- 1. Write a JavaScript program that displays the largest integer among two integers. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .numbers{
+            padding: 10px 10px;
+        }
+        button{
+            margin: 10px 10px;
+            padding: 3px 3px;
+        }
+        .ans{
+            display: flex;
+            font-weight: 600;
+        }
+        p{
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="numbers">
+            <label>Enter the first number : </label>
+            <input type="number" id="n1">
+        </div> 
+        <div class="numbers">
+            <label>Enter the Second number : </label>
+            <input type="number" id="n2">
+        </div>
+        <button onclick="MaxNumber()"> Submit </button>
+    </div>
+    <div class="ans">
+        <p>The maximum number is : </p> <p id="answer"></p>
+    </div>
+    
+    <script>
+        function MaxNumber(){
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+
+            if(!isNaN(n1) && !isNaN(n2)){
+                var maximum_value = Math.max(n1,n2);
+                document.getElementById("answer").innerHTML = maximum_value;
+            }
+            else{
+                document.getElementById("answer").innerHTML = alert("Enter the valid numbers");
+            }
+        }
+    </script>
+
+</body>
+</html>

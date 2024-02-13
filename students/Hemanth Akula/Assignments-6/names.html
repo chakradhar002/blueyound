@@ -1,0 +1,48 @@
+<!-- Write a JavaScript function to get the values of First and Last names of the following form. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .res{
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php" class="fullform" onsubmit="return false;">
+        
+        <input id="fn" placeholder="FirstName" type="text">
+        <input id="ln" placeholder="LastName" type="text">
+        <button onclick="printingName()">Submit</button>
+        <br>
+        <div class="res">
+            <div>
+                <label>First Name :</label>
+                <span id="fn1"></span>
+            </div>
+            <br>
+            <div>
+                <label>Last Name :</label>
+                <span id="ln1"></span>
+            </div>
+        </div>
+    </form>
+    <script>
+        function printingName() {
+            first = document.getElementById("fn").value;
+            last = document.getElementById("ln").value;
+            console.log(first);
+            console.log(last);
+            document.getElementById("fn1").innerHTML = first;
+            document.getElementById("ln1").innerHTML = last;
+            document.getElementById("fn").value = "";
+            document.getElementById("ln").value = "";
+        }
+    </script>
+</body>
+</html>

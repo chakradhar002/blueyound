@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+    <form action="/action_page.php" class="fullform">
+        <div class="fullsec">
+            <h1>Sign Up</h1>
+            <p>
+                <input placeholder="UserName" type="text"></input>
+            </p>
+            <p>
+                <input placeholder="Email" type="email"></input>
+            </p>
+            <p><input placeholder="Password"  type="password" name="password"></input> </p> 
+            <p><input placeholder="Confirm Password"  type="password" name="password"></input> </p> 
+            <p class="gender">
+                Gender
+                <input type="radio">Male</input>
+                <input type="radio">Female</input>
+            </p>
+            <p class="pd">
+                Country :
+                <select class="sel">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </p>
+    
+            <p class="file">        
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+            </p>
+            <p class="cb"><input type="checkbox"></input>I agree to the terms and conditions </p>
+            <input class="sub" type="Submit"></input>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.nav{
+    display: flex;
+    margin: 4px 4px;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+
+.feat{
+    margin: 6px 6px;
+    padding: 8px 8px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 2px;
+    cursor: pointer;
+}
+
+.feat:hover{
+    background-color: blue;
+}

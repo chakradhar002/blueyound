@@ -1,0 +1,27 @@
+.tb{
+    font-weight: 100;
+    text-align: left;
+}
+
+table{
+    /* margin:2px 2px; */
+    width: 50%;
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+tr{
+    border: solid black 1px;
+}
+
+th{
+    padding: 6px 6px;
+    border: solid black 1px;
+}
+
+.sec2{
+    text-align: left;
+}
+
+.qnt{
+    text-align: center;
+}

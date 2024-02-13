@@ -1,0 +1,35 @@
+<!-- Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the results. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Enter 3 numbers (comma separated) : </label>
+        <input type="text" id="inp">
+        <button onclick="SortThreeElements()">Submit</button>
+    </div>
+    <script>
+        function SortThreeElements(){
+            let val = document.getElementById("inp").value;
+            let stream = val.split(",").map(function(num){
+                return parseFloat(num.trim());
+            });
+            for(let i=0;i<stream.length-1;i++){
+                for(let j=i+1;j<stream.length;j++){
+                    if(stream[i] > stream[j]){
+                        let v = stream[i];
+                        stream[i]=stream[j];
+                        stream[j]=v;
+                    }
+                }
+            }
+            alert("The maximum of the given three numbers is " + stream);
+        }
+    </script>
+</body>
+</html>

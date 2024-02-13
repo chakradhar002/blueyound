@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            margin: 0;
+        }
+        .sub{
+            margin: auto;
+            background-color: green;
+            width: 49%;
+            text-align: center;
+            justify-content: center;
+            color: white;
+        }  
+        @media (max-width: 600px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .sub {
+                width: 100%;
+                margin: 20px 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+            <p>
+                Left Side
+            </p>
+            <p>
+                Here is the content
+            </p>
+        </div>
+        <div class="sub">
+            <p>
+                Right Side
+            </p>
+            <p>
+                Here is the content
+            </p>
+        </div>
+    </div>
+</body>
+</html>
