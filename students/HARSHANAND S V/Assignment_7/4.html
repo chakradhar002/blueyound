@@ -1,0 +1,62 @@
+<!-- Write a JavaScript function that accepts a row, column (to identify a particular cell) and a string to update the cell's contents. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+        </tr>
+        <tr>
+            <td>HARSHANAND</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>BALMURUGAN K</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>JOSEPH</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>KATHIR</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <form action="" onsubmit="update(event)">
+        <label for="row">Enter the row no:</label>
+        <input type="number" id="row"><br>
+        <label for="col">Enter the col no:</label>
+        <input type="number" id="col"><br>
+        <label for="string">Enter the value:</label>
+        <input type="text" id="string"><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function update (event){
+            event.preventDefault();
+            const r=document.getElementById("row").value;
+            const c=document.getElementById("col").value;
+            const str=document.getElementById("string").value;
+            const arr=document.querySelectorAll("tr");
+            if(arr.length<r)
+                return;
+            const new_arr=arr[r].querySelectorAll("td")
+            console.log(new_arr);
+            if(c>new_arr.length)
+                return;
+            new_arr[c-1].innerHTML=str;
+            document.getElementById("row").value="";
+            document.getElementById("col").value="";
+            document.getElementById("string").value="";
+
+        }
+    </script>
+</body>
+</html>
