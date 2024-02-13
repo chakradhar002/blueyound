@@ -1,0 +1,148 @@
+<html>
+    <title>Assignment 3</title>
+    <style>
+        body { 
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            color: #333333;
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background : url("optitle.png") no-repeat center;
+            background-size: cover;
+            height: 680px;
+        }
+        nav {
+            margin: 0px;
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 7px;
+            height: 20px;
+            line-height: 20px;
+            /*
+            display: flex;
+            justify-content: right;*/
+        }
+
+        nav li {
+            display: inline;
+        }
+        nav li :hover {
+            color: #b38575;
+        }
+        nav a {
+            color: #333;
+            padding: 5px 7px 10px 7px;
+            font-size: 1em;
+            font-weight: bold; 
+            text-decoration: none;
+        }
+
+        
+
+        h1 {
+            margin:0px;
+            padding: 80px 0 0 20px;
+            font-weight: 900;
+            font-size: 80px;
+            color: #b38575;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .content{
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: justify;
+        }
+        article{
+            border: 1px solid violet;
+            border-radius: 10px;
+            padding: 12px;
+            margin: 5px;margin-bottom: 20px;
+            box-shadow: 2px 2px 6.3px #ffb300;
+        }
+        .content img{
+            width: 350px;
+            height: 260px;
+            margin-right: 15px;
+            float: left;
+        }
+        .content p{
+            font-size: 18px;
+            color:#333333;
+            margin: 0px;
+            padding: 20px;
+        }
+        .content p:first-of-type::first-letter{
+            font-size: 32px;
+            color:#b38575;
+            font-style: bold;
+        }
+        h2{
+            font-weight: 900;
+            color: #b38575;
+            margin-bottom: 20px;
+        }
+        .content article::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        footer{
+            background-color: #ccc;
+        }
+        span{
+            text-align: center;
+            display: block;
+            padding: 10px;
+            color: #333333;
+        }
+    </style>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 style="font-size: 40;">The One Piece</h1>
+    </header>
+    <body>
+        <section class="content">
+            <article>
+                <h2>Monkey D. Luffy</h2>
+                <img src="luffy.png" alt="No Img">
+                <p>Monkey D. Luffy is the protagonist in One Piece and captain of the increasingly infamous and powerful Straw Hat Pirates. He ate the Gum-Gum Devil Fruit that changed his body to rubber. His dream is to find the legendary One Piece and become Pirate King. He has made quite a name for himself around the world and has a bounty on his head to match - 1,500,000,000 Berries. Despite his naive attitude, he is an amazing leader who the Straw Hats follow with pride.</p>
+            </article>
+        </section>
+        <section class="content">
+            <article>
+                <h2>Roronoa Zoro</h2>
+                <img src="zoro.png" alt="No Img">
+                <p>
+                    Roronoa Zoro is the swordsman, first member and Vice Captain of the Straw Hat Pirates. He uses the Santoryu-style (Three Sword Style) of sword combat and aims to become the world's greatest swordsman. He has a bounty of 1,111,000,000 berries and is one of the eleven supernova rookies of the 'Worst Generation' of pirates.
+                  </p>
+            </article>
+        </section>
+        <section class="content">
+            <article>
+                <h2>Usopp</h2>
+                <img src="ussop.png" alt="No Img">
+                <p>
+                    Usopp is the sniper of the Straw Hat Pirates who is famous for frequently lying. He wants to be a great warrior of the sea.
+                  </p>
+            </article>
+        </section>
+
+    </body>
+    <footer>
+        <span>Copyright @2024</span>
+    </footer>
+</html>

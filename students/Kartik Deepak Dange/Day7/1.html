@@ -1,0 +1,24 @@
+<html>
+    <style>
+        .name{
+            background-color: rgba(234, 234, 234, 0.5);
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+        <form>
+                <input type="text" id="Fname" class="name" placeholder="Fname" required value="Kartik"><br>
+                <input type="text" id="Lname" class="name" placeholder="Lname" required value="Dange">
+        </form>
+        <script>
+            // Write a JavaScript function to get the values of First and Last names of the following form.
+            let firstname = document.getElementById("Fname").value;
+            let lastname = document.getElementById("Lname").value;
+            console.log(firstname +" "+ lastname);
+        </script>
+    </body>
+</html>
