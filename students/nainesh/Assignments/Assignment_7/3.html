@@ -1,0 +1,46 @@
+<!-- Write a JavaScript function to add rows to a table. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="demo">
+        <tr>
+            <td>HAARSHANAND</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>JOSEPH</td>
+            <td>
+                20
+            </td>
+        </tr>
+    </table>
+    <form action="" onsubmit="insertion(event)">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name"><br>
+        <label for="age">Enter your age:</label>
+        <input type="text" id="age"><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+       function insertion(event) {
+           event.preventDefault();
+           const name = document.getElementById("name").value;
+           const age = document.getElementById("age").value;
+           let table = document.getElementById("demo");
+           let new_r = table.insertRow();
+           let new_name = new_r.insertCell(0);
+           let new_age = new_r.insertCell(1);
+           new_name.innerHTML = name;
+           new_age.innerHTML = age;
+           console.log("Row inserted");
+           document.getElementById("name").value="";
+           document.getElementById("age").value="";
+       }
+    </script>
+</body>
+</html>

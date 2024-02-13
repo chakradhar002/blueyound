@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #parent{
+            padding: 5px;
+            display: flex;
+            background-color:purple;
+            justify-content: space-evenly;
+        }
+        .child{
+            color: white;
+        }
+        #imgHold{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            
+            background-color: bisque;
+        }
+        #container{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-evenly;
+            border:5px solid black;
+            height: 400px;
+           
+            padding: 10px;
+            align-items: center;
+        }
+        #container div{
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+            color: white;
+            border:5px solid black;
+            text-align: center;
+            margin: 2px;
+        }
+        #b2{
+            flex-shrink: 2;
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+    <nav id="parent">
+        <div class="child" id="c1">Home</div>
+        <div class="child" id="c2">Product</div>
+        <div class="child" id="c3">Contact</div>
+        <div class="child" id="c4">Cart</div>
+    </nav>
+   </header>
+   <main>
+    <div id="imgHold">
+        <img src="myntra.png">
+    </div>
+    <div id="container">
+        <div id="b1">Box1</div>
+        <div id="b2">Box2</div>
+        <div id="b3">Box3</div>
+    </div>
+   </main>
+</body>
+</html>

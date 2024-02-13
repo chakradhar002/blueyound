@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+let obj={
+  name:"Nainesh",
+  mail:"nainesh.patil",
+  sur:"patil"
+};
+
+let obj1={
+  nam:"Nainesh",
+  mai:"nainesh.patil",
+  sur:"patil"
+};
+
+localStorage.setItem('User',JSON.stringify(obj1));
+
+//localStorage.getItem('User');
+
+localStorage.setItem('User1',JSON.stringify(obj));
+// localStorage.setItem('User2',JSON.stringify(obj));
+
+console.log( )
+localStorage.getItem('User');
+
+
+let retrived=JSON.parse(localStorage.getItem('User1') )
+console.log(retrived)
+
+</script>
+
+</body>
+</html>

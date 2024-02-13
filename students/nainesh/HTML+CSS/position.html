@@ -1,0 +1,42 @@
+<!-- Visibility vs Display -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 100px;
+            background-color: aquamarine;
+            margin: 10px;
+            display: inline-block;
+        }
+        #static{
+            position: static;
+        }
+        #absolute{
+            position: absolute;
+            top:0px;
+            left: 250px;
+        }
+        #relative{
+            position: relative;
+            top:20px;
+            left:10px;
+        }
+        #fixed{
+            position: fixed;
+            top:100px;
+            left:600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="static">Static</div>
+    <div id="relative">Relative</div>
+    <div id="absolute">Absolute</div>
+    <div id="fixed">Fixed</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .heart-container {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      cursor: pointer;
+      animation: heartbeat 1s infinite;
+    }
+
+    .heart {
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background-color: red;
+      transform: rotate(-45deg);
+      transition: transform 0.5s;
+    }
+
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart:after {
+      top: 0;
+      left: 50px;
+    }
+
+    .hidden-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: white;
+      display: none;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes breakHeart {
+      0% {
+        transform: rotate(-45deg) scale(1);
+      }
+      20% {
+        transform: rotate(-45deg) scale(1.2);
+      }
+      50% {
+        transform: rotate(-45deg) scale(0.8);
+      }
+      80% {
+        transform: rotate(-45deg) scale(1.1);
+      }
+      100% {
+        transform: rotate(-45deg) scale(0);
+      }
+    }
+
+    .heart-container.broken .heart {
+      animation: breakHeart 1s forwards;
+    }
+
+    .heart-container.broken .hidden-text {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart-container" onclick="breakHeartAndShowText()">
+    <div class="heart"></div>
+    <div class="hidden-text">Ritu</div>
+  </div>
+
+  <script>
+    function breakHeartAndShowText() {
+      const heartContainer = document.querySelector('.heart-container');
+      heartContainer.classList.add('broken');
+    }
+  </script>
+
+</body>
+</html>

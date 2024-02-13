@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<button id="b1" onclick="cnt=cnt+1; document.querySelector('#head ').innerText=`Cart value is ${cnt}`;">
+  Add Itmes
+</button>
+
+<button id="b2" onclick="cnt=cnt+2">
+  1+1 Sale
+</button> 
+
+<h1 id="head">Cart value is 0</h1>
+
+</body>
+
+<script>
+let cnt=0;
+</script>
+</html>

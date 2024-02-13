@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    body{
+      align-content: center; 
+      justify-content: space-around;
+      display: flex;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    #main,#button-cont{
+       flex-direction: column;
+    }
+
+    #main{
+      padding: 5px;
+      border: 2px solid gray;
+      border-radius: 5px;
+      width: max-content;
+    }
+
+    button{
+      padding: 5px;
+      height: 50px;
+      width: 50px;
+      margin: 5px;
+      background-color: rgb(240, 246, 246);
+    }
+
+    input{
+      border: 2px solid black;
+      width: 220px;
+      height: 50px;
+      margin: 7px;
+    }
+  </style>
+
+</head>
+<body>
+
+<div id="main">
+  
+  <input id="display" type="text" readonly>
+
+<div id="button-cont">
+
+<div class="row-cont">
+  <button id="C">C</button>
+  <button id="1" onclick="curValue=curValue+'1'; document.querySelector('#display').value=curValue;" >1</button>
+  <button>2</button>
+</div>
+
+<div class="row-cont">
+  <button>+</button>
+  <button>3</button>
+  <button>4</button>
+</div>
+
+<div class="row-cont">
+  <button>-</button>
+  <button>5</button>
+  <button>6</button>
+</div>
+
+<div class="row-cont">
+  <button>*</button>
+  <button>7</button>
+  <button>8</button>
+</div>
+
+<div class="row-cont">
+  <button>/</button>
+  <button>=</button>
+  <button>9</button>
+</div>
+
+<div class="row-cont">
+  <button>0</button>
+  <button>.</button>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let curValue='123';
+document.querySelector("#display").value= curValue;
+
+</script>
+
+</body>
+</html>
